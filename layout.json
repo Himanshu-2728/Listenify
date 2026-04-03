@@ -1,0 +1,245 @@
+{
+  "tabbedSearchResultsRenderer": {
+    "tabs": [
+      {
+        "tabRenderer": {
+          "title": "YT Music",
+          "selected": true,
+          "content": {
+            "sectionListRenderer": {
+              "contents": [
+                {
+                  "musicCardShelfRenderer": {
+                    "trackingParams": "CIEDEPqRBRgAIhMIvZyF_OPEkwMVjMxVCR2L6h8K",
+                    "thumbnail": {
+                      "musicThumbnailRenderer": {
+                        "thumbnail": {
+                          "thumbnails": [
+                            {
+                              "url": "https://i.ytimg.com/vi/dQw4w9WgXcQ/sddefault.jpg?sqp=-oaymwEWCJADEOEBIAQqCghqEJQEGHgg6AJIWg&rs=AMzJL3lNNudXg7f4Qf7PiE9tvCAkHTjJ0w",
+                              "width": 400,
+                              "height": 225
+                            }
+                          ]
+                        },
+                        "thumbnailCrop": "MUSIC_THUMBNAIL_CROP_UNSPECIFIED",
+                        "thumbnailScale": "MUSIC_THUMBNAIL_SCALE_ASPECT_FIT",
+                        "trackingParams": "CMMDEIS_AiITCL2chfzjxJMDFYzMVQkdi-ofCg=="
+                      }
+                    },
+                    "title": {
+                      "runs": [
+                        {
+                          "text": "Never Gonna Give You Up",
+                          "navigationEndpoint": {
+                            "clickTrackingParams": "CIEDEPqRBRgAIhMIvZyF_OPEkwMVjMxVCR2L6h8KygEESBrHvg==",
+                            "watchEndpoint": {
+                              "videoId": "dQw4w9WgXcQ",
+                              "watchEndpointMusicSupportedConfigs": {
+                                "watchEndpointMusicConfig": {
+                                  "musicVideoType": "MUSIC_VIDEO_TYPE_OMV"
+                                }
+                              }
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    "subtitle": {
+                      "runs": [
+                        {
+                          "text": "Video"
+                        },
+                        {
+                          "text": " \u2022 "
+                        },
+                        {
+                          "text": "Rick Astley",
+                          "navigationEndpoint": {
+                            "clickTrackingParams": "CIEDEPqRBRgAIhMIvZyF_OPEkwMVjMxVCR2L6h8KygEESBrHvg==",
+                            "browseEndpoint": {
+                              "browseId": "UCwZEU0wAwIyZb4x5G_KJp2w",
+                              "browseEndpointContextSupportedConfigs": {
+                                "browseEndpointContextMusicConfig": {
+                                  "pageType": "MUSIC_PAGE_TYPE_ARTIST"
+                                }
+                              }
+                            }
+                          }
+                        },
+                        {
+                          "text": " \u2022 "
+                        },
+                        {
+                          "text": "1.7B views"
+                        },
+                        {
+                          "text": " \u2022 "
+                        },
+                        {
+                          "text": "3:34"
+                        }
+                      ],
+                      "accessibility": {
+                        "accessibilityData": {
+                          "label": "Video \u2022 Rick Astley \u2022 1.7 billion views \u2022 3 minutes, 34 seconds"
+                        }
+                      }
+                    },
+                    "contents": [
+                      {
+                        "messageRenderer": {
+                          "text": {
+                            "runs": [
+                              {
+                                "text": "More from YouTube"
+                              }
+                            ]
+                          },
+                          "trackingParams": "CMIDEJY7GAAiEwi9nIX848STAxWMzFUJHYvqHwo=",
+                          "style": {
+                            "value": "RENDER_STYLE_SIMPLE_HEADER"
+                          }
+                        }
+                      },
+                      {
+                        "musicResponsiveListItemRenderer": {
+                          "trackingParams": "CLIDEMGhCBgBIhMIvZyF_OPEkwMVjMxVCR2L6h8K",
+                          "thumbnail": {
+                            "musicThumbnailRenderer": {
+                              "thumbnail": {
+                                "thumbnails": [
+                                  {
+                                    "url": "https://i.ytimg.com/vi/RmK_V1FHH-o/sddefault.jpg?sqp=-oaymwEWCJADEOEBIAQqCghqEJQEGHgg6AJIWg&rs=AMzJL3maWBDFKqV3C-EPmaMAwZoXsq9o5A",   
+                                    "width": 400,
+                                    "height": 225
+                                  }
+                                ]
+                              },
+                              "thumbnailCrop": "MUSIC_THUMBNAIL_CROP_UNSPECIFIED",
+                              "thumbnailScale": "MUSIC_THUMBNAIL_SCALE_ASPECT_FIT",
+                              "trackingParams": "CMEDEIS_AiITCL2chfzjxJMDFYzMVQkdi-ofCg=="
+                            }
+                          },
+                          "overlay": {
+                            "musicItemThumbnailOverlayRenderer": {
+                              "background": {
+                                "verticalGradient": {
+                                  "gradientLayerColors": [
+                                    "3422552064",
+                                    "3422552064"
+                                  ]
+                                }
+                              },
+                              "content": {
+                                "musicPlayButtonRenderer": {
+                                  "playNavigationEndpoint": {
+                                    "clickTrackingParams": "CMADEMjeAiITCL2chfzjxJMDFYzMVQkdi-ofCsoBBEgax74=",
+                                    "watchEndpoint": {
+                                      "videoId": "RmK_V1FHH-o",
+                                      "watchEndpointMusicSupportedConfigs": {
+                                        "watchEndpointMusicConfig": {
+                                          "musicVideoType": "MUSIC_VIDEO_TYPE_OMV"
+                                        }
+                                      }
+                                    }
+                                  },
+                                  "trackingParams": "CMADEMjeAiITCL2chfzjxJMDFYzMVQkdi-ofCg==",
+                                  "playIcon": {
+                                    "iconType": "PLAY_ARROW"
+                                  },
+                                  "pauseIcon": {
+                                    "iconType": "PAUSE"
+                                  },
+                                  "iconColor": 4294967295,
+                                  "backgroundColor": 0,
+                                  "activeBackgroundColor": 0,
+                                  "loadingIndicatorColor": 14745645,
+                                  "playingIcon": {
+                                    "iconType": "VOLUME_UP"
+                                  },
+                                  "iconLoadingColor": 0,
+                                  "activeScaleFactor": 1,
+                                  "buttonSize": "MUSIC_PLAY_BUTTON_SIZE_SMALL",
+                                  "rippleTarget": "MUSIC_PLAY_BUTTON_RIPPLE_TARGET_SELF",
+                                  "accessibilityPlayData": {
+                                    "accessibilityData": {
+                                      "label": "Play Never Gonna Give You up (Piano Version) - PianoX"
+                                    }
+                                  },
+                                  "accessibilityPauseData": {
+                                    "accessibilityData": {
+                                      "label": "Pause Never Gonna Give You up (Piano Version) - PianoX"
+                                    }
+                                  }
+                                }
+                              },
+                              "contentPosition": "MUSIC_ITEM_THUMBNAIL_OVERLAY_CONTENT_POSITION_CENTERED",
+                              "displayStyle": "MUSIC_ITEM_THUMBNAIL_OVERLAY_DISPLAY_STYLE_PERSISTENT"
+                            }
+                          },
+                          "flexColumns": [
+                            {
+                              "musicResponsiveListItemFlexColumnRenderer": {
+                                "text": {
+                                  "runs": [
+                                    {
+                                      "text": "Never Gonna Give You up (Piano Version)",
+                                      "navigationEndpoint": {
+                                        "clickTrackingParams": "CLIDEMGhCBgBIhMIvZyF_OPEkwMVjMxVCR2L6h8KmgEDEPQkygEESBrHvg==",
+                                        "watchEndpoint": {
+                                          "videoId": "RmK_V1FHH-o",
+                                          "watchEndpointMusicSupportedConfigs": {
+                                            "watchEndpointMusicConfig": {
+                                              "musicVideoType": "MUSIC_VIDEO_TYPE_OMV"
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  ]
+                                },
+                                "displayPriority": "MUSIC_RESPONSIVE_LIST_ITEM_COLUMN_DISPLAY_PRIORITY_HIGH"
+                              }
+                            },
+                            {
+                              "musicResponsiveListItemFlexColumnRenderer": {
+                                "text": {
+                                  "runs": [
+                                    {
+                                      "text": "PianoX",
+                                      "navigationEndpoint": {
+                                        "clickTrackingParams": "CLIDEMGhCBgBIhMIvZyF_OPEkwMVjMxVCR2L6h8KygEESBrHvg==",
+                                        "browseEndpoint": {
+                                          "browseId": "UCTZRbZP2y7H6jOJDvCNbyoA",
+                                          "browseEndpointContextSupportedConfigs": {
+                                            "browseEndpointContextMusicConfig": {
+                                              "pageType": "MUSIC_PAGE_TYPE_ARTIST"
+                                            }
+                                          }
+                                        }
+                                      }
+                                    },
+                                    {
+                                      "text": " \u2022 "
+                                    },
+                                    {
+                                      "text": "899K views"
+                                    },
+                                    {
+                                      "text": " \u2022 "
+                                    },
+                                    {
+                                      "text": "3:25"
+                                    }
+                                  ],
+                                  ],
+                                  ],
+                                  ],
+                                  ],
+                                  "accessibility": {
+                                    "accessibilityData": {
+                                      "label": "PianoX \u2022 899 thousand views \u2022 3 minutes, 25 seconds"
+                                    }
+                                  }
+                                },
