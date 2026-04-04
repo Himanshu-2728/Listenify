@@ -1,9 +1,10 @@
 import subprocess
-from searchsong import get_id
+from searchsong import search_youtube_music , extract_songs
 
 def get_stream_url(query):
 
-    id = get_id(query)
+    data = search_youtube_music(query)
+    id = extract_songs(data)[0]['videoId']
     url =  f"https://www.youtube.com/watch?v={id}"
 
 

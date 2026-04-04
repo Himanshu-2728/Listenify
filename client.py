@@ -1,57 +1,66 @@
 import socket
 import threading
 from getStreamUrl import get_stream_url
+import time
+import sys
 
 class Client(socket.socket):
-    def __init__(self , player):
+    def __init__(self , player , ip):
         self.player = player
+        self.stream_url = ""
+        self.isConnected = False
         super().__init__(socket.AF_INET, socket.SOCK_STREAM)
         try:
 
-            self.connect((socket.gethostbyname(socket.gethostname()) , 5050))
-        
+            self.connect((ip , 5050))
+            print("[SUCCESS] Connection Established")
+            self.isConnected = True
         except Exception as e:
-            print(e)
+            print("[ERROR] Please check if the ip is correct of the server is running properly")
+            sys.exit()
 
-        threading.Thread(target=self.recv_messages).start()
+        if self.isConnected:
+            threading.Thread(target=self.recv_messages , daemon=True).start()
 
     def recv_messages(self):
-        while True: 
+        while self.isConnected: 
             try:
-                data = self.recv(1024).decode().split(":")
-                if(data[0] == "play"):
-                    url = get_stream_url(data[1])
-                    self.player.play(url)
-                if(data[0] == "next"):
-                    next_song = data[1]
-                    print("next song event recieved:" + next_song)
-                    url = get_stream_url(next_song)
-                    self.player.stop()
-                    print(f"Now playing {next_song}")
-                    self.player.play(url)
-                if(data[0] == "play"):
-                    url = get_stream_url(data[1])
-                    self.player.play(url)
-                if(data[0] == "play"):
-                    url = get_stream_url(data[1])
-                    self.player.play(url)
-                if(data[0] == "play"):
-                    url = get_stream_url(data[1])
-                    self.player.play(url)
-                if(data[0] == "play"):
-                    url = get_stream_url(data[1])
-                    self.player.play(url)
-                if(data[0] == "play"):
-                    url = get_stream_url(data[1])
-                    self.player.play(url)
-                if(data[0] == "play"):
-                    url = get_stream_url(data[1])
-                    self.player.play(url)
-                if not data:
-                    print("client disconnected")
+                bytes = self.recv(1024)
+
+                if not bytes:
+                    print("[ERROR] Server disconnected")
+                    break
+
+                data = bytes.decode().split(":")
+                
+    
+                if data[0] == 'pause':
+                    self.player.pause = not self.player.pause
+
+                elif data[0] == "load":
+                    loadSongName = data[1]
+                    url = get_stream_url(loadSongName)
+                    self.stream_url = url
+                    self.send_event(f"ready:{loadSongName}")
+
+                elif data[0] == "playSongOnTimestamp":
+                    timestamp = float(data[2])
+                    delay = timestamp - time.time()
+                    if delay > 0:
+                        time.sleep(delay)
+                    
+                    print(f"[NOW PLAYING] {loadSongName}")
+                    self.player.play(self.stream_url)
+
+            except ConnectionResetError:
+                print("[ERROR] Server Disconnected")
+                self.isConnected = False
+                break
+
 
             except Exception as e:
                 print(e)
+        
 
     def send_event(self , event):
         self.send(str.encode(event))
