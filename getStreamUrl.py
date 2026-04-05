@@ -1,5 +1,6 @@
 import subprocess
 from searchsong import search_youtube_music , extract_songs
+from yt_dlp import YoutubeDL
 
 def get_stream_url(query):
 
@@ -8,15 +9,15 @@ def get_stream_url(query):
     url =  f"https://www.youtube.com/watch?v={id}"
 
 
-    output = subprocess.check_output(
-        [
-            "yt-dlp",
-            "--js-runtimes" , "node",
-            "-f" , "bestaudio",
-            "-g",
-            "--no-playlist",
-            url
-        ]
-    )
+    ydl_opts = {
+        "format": "bestaudio",
+        "noplaylist": True,
+    }
 
-    return output.decode()
+    with YoutubeDL(ydl_opts) as ydl:
+        info = ydl.extract_info(url, download=False)
+        audio_url = info["url"]
+
+    return audio_url
+
+# print(get_stream_url("wildflower"))
